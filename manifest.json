@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Random Tab Switcher",
+  "description": "Switch browser tabs randomly at random time intervals",
+  "version": "1.0",
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
