@@ -6,10 +6,17 @@
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
-    <div class="card">
+    <div class="card" id="card">
       <div class="header">
-        <h2>Random Tab Switcher</h2>
-        <span class="badge">AUTO</span>
+        <div class="header-text">
+          <h1>Random Tab Switcher</h1>
+          <p class="status-subtitle" id="statusText">Switcher is idle</p>
+        </div>
+      </div>
+
+      <div class="status-row" aria-live="polite">
+        <span class="status-dot" id="statusDot" aria-hidden="true"></span>
+        <span class="status-badge stopped" id="statusBadge">Stopped</span>
       </div>
 
       <p class="description">
@@ -18,11 +25,31 @@
       </p>
 
       <div class="buttons">
-        <button id="start" class="btn start">▶ Start</button>
-        <button id="stop" class="btn stop">■ Stop</button>
+        <button
+          id="startBtn"
+          class="btn start"
+          type="button"
+          aria-pressed="false"
+        >
+          <span class="btn-icon" aria-hidden="true">▶</span>
+          Start
+        </button>
+        <button
+          id="stopBtn"
+          class="btn stop"
+          type="button"
+          aria-pressed="false"
+          disabled
+        >
+          <span class="btn-icon" aria-hidden="true">■</span>
+          Stop
+        </button>
       </div>
 
-      <div class="footer">⏱ Interval: <strong>3–10 seconds</strong></div>
+      <div class="footer">
+        <span class="footer-icon" aria-hidden="true">⏱</span>
+        Interval: <strong>3–10 seconds</strong>
+      </div>
     </div>
 
     <script src="popup.js"></script>
