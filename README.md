@@ -43,6 +43,7 @@ RandomTabSwitcher/
 └── README.md
 ```
 
+
 ## How it works
 
 ```mermaid
