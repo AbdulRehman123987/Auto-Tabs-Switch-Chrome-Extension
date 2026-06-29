@@ -91,8 +91,6 @@ MIT
 
 <div align="center">
 
-Built while learning MERN session authentication 🚀
-
 **If this helped you, give it a ⭐ on GitHub!**
 
 </div>
